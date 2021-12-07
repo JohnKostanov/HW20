@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pr2503" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3g4-cd-RKK">
+                                <rect key="frame" x="126" y="433" width="162" height="30"/>
+                                <state key="normal" title="Поменять цвет экрана"/>
+                                <connections>
+                                    <action selector="onBut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XD4-sb-XPE"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BJm-0M-3wd">
+                                <rect key="frame" x="10" y="54" width="394" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysS-w9-ugg">
+                                <rect key="frame" x="20" y="148.5" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Сгенерировать пароль"/>
+                                <connections>
+                                    <action selector="generatePassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cyG-ro-ntT"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="qfV-aB-jV9">
+                                <rect key="frame" x="364" y="108" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4X-XM-eXq">
+                                <rect key="frame" x="10" y="108" width="41.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ysS-w9-ugg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1Rh-Ru-gH7"/>
+                            <constraint firstItem="qfV-aB-jV9" firstAttribute="top" secondItem="BJm-0M-3wd" secondAttribute="bottom" constant="20" id="9Mp-oV-a4a"/>
+                            <constraint firstItem="ysS-w9-ugg" firstAttribute="top" secondItem="W4X-XM-eXq" secondAttribute="bottom" constant="20" id="Fk6-aC-hdd"/>
+                            <constraint firstItem="BJm-0M-3wd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="FpD-R0-oOl"/>
+                            <constraint firstItem="3g4-cd-RKK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Knq-z3-GoJ"/>
+                            <constraint firstItem="BJm-0M-3wd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="OHv-Ev-0qt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BJm-0M-3wd" secondAttribute="trailing" constant="10" id="SXT-Pd-COj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qfV-aB-jV9" secondAttribute="trailing" constant="30" id="fUX-8u-DuW"/>
+                            <constraint firstItem="W4X-XM-eXq" firstAttribute="top" secondItem="BJm-0M-3wd" secondAttribute="bottom" constant="20" id="ff6-gH-rbw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ysS-w9-ugg" secondAttribute="trailing" constant="20" id="k1l-gK-jh3"/>
+                            <constraint firstItem="3g4-cd-RKK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kf7-7S-ZNl"/>
+                            <constraint firstItem="W4X-XM-eXq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="qlL-oF-sJ5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="qfV-aB-jV9" id="Urj-0O-oeO"/>
+                        <outlet property="button" destination="3g4-cd-RKK" id="yGm-KB-boF"/>
+                        <outlet property="generatePasswordButton" destination="ysS-w9-ugg" id="YSd-hq-Rwl"/>
+                        <outlet property="password" destination="BJm-0M-3wd" id="zwa-VC-3Tr"/>
+                        <outlet property="unlockPasswordLabel" destination="W4X-XM-eXq" id="dpM-XB-iUG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="96.428571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
