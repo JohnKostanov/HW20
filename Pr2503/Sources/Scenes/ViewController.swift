@@ -60,6 +60,9 @@ class ViewController: UIViewController {
             self.unlockPasswordLabel.text = "Пароль \(currentPassword) не взломан"
             print("Пароль не взломан")
         }
+        if isPasswordCracked {
+            isPasswordCracked = false
+        }
     }
     
     @IBAction func onBut(_ sender: Any) {
