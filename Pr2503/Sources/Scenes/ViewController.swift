@@ -33,6 +33,7 @@ class ViewController: UIViewController {
         unlockPasswordLabel.numberOfLines = 2
         unlockPasswordLabel.text = ""
         activityIndicator.isHidden = true
+        passwordTextField.isSecureTextEntry = true
     }
     
     // MARK: - Methods
