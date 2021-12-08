@@ -32,7 +32,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysS-w9-ugg">
                                 <rect key="frame" x="20" y="148.5" width="374" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Сгенерировать пароль"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Начать подбор пароля"/>
                                 <connections>
                                     <action selector="generatePassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cyG-ro-ntT"/>
                                 </connections>
@@ -40,7 +40,7 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="qfV-aB-jV9">
                                 <rect key="frame" x="364" y="108" width="20" height="20"/>
                             </activityIndicatorView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4X-XM-eXq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4X-XM-eXq">
                                 <rect key="frame" x="10" y="108" width="41.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -56,6 +56,7 @@
                             <constraint firstItem="BJm-0M-3wd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="FpD-R0-oOl"/>
                             <constraint firstItem="3g4-cd-RKK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Knq-z3-GoJ"/>
                             <constraint firstItem="BJm-0M-3wd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="OHv-Ev-0qt"/>
+                            <constraint firstItem="qfV-aB-jV9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="W4X-XM-eXq" secondAttribute="trailing" constant="8" symbolic="YES" id="Rwq-PO-nSn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BJm-0M-3wd" secondAttribute="trailing" constant="10" id="SXT-Pd-COj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qfV-aB-jV9" secondAttribute="trailing" constant="30" id="fUX-8u-DuW"/>
                             <constraint firstItem="W4X-XM-eXq" firstAttribute="top" secondItem="BJm-0M-3wd" secondAttribute="bottom" constant="20" id="ff6-gH-rbw"/>
@@ -68,7 +69,7 @@
                         <outlet property="activityIndicator" destination="qfV-aB-jV9" id="Urj-0O-oeO"/>
                         <outlet property="button" destination="3g4-cd-RKK" id="yGm-KB-boF"/>
                         <outlet property="generatePasswordButton" destination="ysS-w9-ugg" id="YSd-hq-Rwl"/>
-                        <outlet property="password" destination="BJm-0M-3wd" id="zwa-VC-3Tr"/>
+                        <outlet property="passwordTextField" destination="BJm-0M-3wd" id="zwa-VC-3Tr"/>
                         <outlet property="unlockPasswordLabel" destination="W4X-XM-eXq" id="dpM-XB-iUG"/>
                     </connections>
                 </viewController>
